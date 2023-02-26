@@ -1,5 +1,6 @@
 const request = require('request');
 const fs = require('fs');
+
 if (process.argv.length === 4) {
   const requestedResource = process.argv[2];
   const localFilePath = process.argv[3];
