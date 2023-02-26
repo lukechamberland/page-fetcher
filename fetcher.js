@@ -18,7 +18,7 @@ if (process.argv.length === 4) {
               }
             });
           } else {
-            console.log("Could not save to the requested path.", err);
+            console.log("Could not save to the requested path. " + err);
           }
         });
       } else {
@@ -26,7 +26,7 @@ if (process.argv.length === 4) {
         console.log(`Status Code: ${status.statusCode} \r\n Staus: \r\n ${status} \r\n Body: \r\n ${body}`);
       }
     } else {
-      console.log("Could not fetch the requested webpage.", err);
+      console.log("Could not fetch the requested webpage: " + err);
     }
   });
 } else {
